@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="DISPLAY: Directable Human-Object Interaction Video Generation via Sparse Motion Guidance and Multi-Task Auxiliary">
+  <meta name="keywords" content="Co-speech Gesture, Diffusion Transformer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DISPLAY: Directable Human-Object Interaction Video Generation via Sparse Motion Guidance and Multi-Task Auxiliary</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/logo.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <!-- <h4 class="subtitle is-5"><em>ICCV 2025 </em> </h4> -->
+           <h1 class="title is-3 publication-title">
+  DISPLAY: Directable Human-Object Interaction <br> 
+  Video Generation via Sparse Motion Guidance <br> 
+  and Multi-Task Auxiliary
+</h1>
+          <h4 class="subtitle is-5 has-text-weight-semibold" style="font-style: italic;">
+            <!-- ICCV 2025 -->
+          </h4>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://guanjz20.github.io/">Jiazhi Guan</a><sup>*</sup>,</span>
+            <span class="author-block">
+              <a href="https://mumuwei.github.io/">Quanwei Yang</a><sup>*</sup>,</span>
+            <span class="author-block">
+              <a href="https://hlyyyyy.github.io/">Luying Huang</a><sup></sup>,</span> 
+            <span class="author-block">
+              <a>Junhao Liang</a><sup></sup>,</span>  
+            <span class="author-block">
+              <a>Borong Liang</a><sup></sup>,</span>    
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=pnuQ5UsAAAAJ&view_op=list_works&sortby=pubdate">Haocheng Feng</a><sup></sup>,
+            </span>  
+            <span class="author-block">
+              <a >Wei He</a><sup></sup>,</span>
+            
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=2Pedf3EAAAAJ">Kaisiyuan Wang</a><sup>†</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://hangz-nju-cuhk.github.io/">Hang Zhou</a><sup>†</sup>,
+            </span>
+            
+            <span class="author-block">
+                <a >Jingdong Wang</a><sup></sup>,</span>
+            
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup></sup>Baidu Inc.</span>
+          </div>
+          <div class="is-size-6">
+            <span><sup>*</sup> Equal contribution.</span>
+            <span style="margin-left: 1em;"><sup>†</sup> Corresponding authors.</span>
+          </div>
+          
+          
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+             
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=o2odci6nV7k"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+     
+            </div>
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+      <img src="./static/images/pipe_display.png"  width="800px" height="500px" 
+        type="application/pdf">
+      </img>
+      
+      <h2 class="subtitle has-text-centered">
+      </h2>
+
+  </div>
+</section>
+
+<section class="section"></section>
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction Video</h2>
+        <!-- <div class="publication-video"> -->
+          <!-- <video poster="" id="paper-video" autoplay controls muted loop playsinline height="100%"> -->
+          <!-- <video width="800" height="600" controls>
+            <source src="https://www.youtube.com/watch?v=jWvAglDGWxA&t=1s" type="video/mp4">
+          </video> -->
+          <iframe width="800" height="480" src="https://www.youtube.com/embed/o2odci6nV7k?si=9s8qfjTJbSetoDpy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <!-- </video> -->
+        <!-- </div> -->
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{guan2026DISPLAY,
+  author    = {Jiazhi Guan, Quanwei Yang, Luying Huang, Junhao Liang, Borong Liang, Haocheng Feng, Wei He, Kaisiyuan Wang, Hang Zhou, Jingdong Wang.},
+  title     = {DISPLAY: Directable Human-Object Interaction Video Generation via Sparse Motion Guidance and Multi-Task Auxiliary},
+  year      = {2026},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            <!-- This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website. -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
