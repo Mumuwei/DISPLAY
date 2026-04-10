@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="DISPLAY: Directable Human-Object Interaction Video Generation via Sparse Motion Guidance and Multi-Task Auxiliary">
+        content="GestureHYDRA: Semantic Co-speech Gesture Synthesis via Hybrid Modality Diffusion Transformer and Cascaded-Synchronized Retrieval-Augmented Generation">
   <meta name="keywords" content="Co-speech Gesture, Diffusion Transformer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DISPLAY: Directable Human-Object Interaction Video Generation via Sparse Motion Guidance and Multi-Task Auxiliary</title>
+  <title>GestureHYDRA: Semantic Co-speech Gesture Synthesis via Hybrid Modality Diffusion Transformer and Cascaded-Synchronized Retrieval-Augmented Generation</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -55,7 +55,8 @@
   Video Generation via Sparse Motion Guidance <br> 
   and Multi-Task Auxiliary
 </h1>
-          <h4 class="subtitle is-5 has-text-weight-semibold" style="font-style: italic;">
+
+<h4 class="subtitle is-5 has-text-weight-semibold" style="font-style: italic;">
             <!-- ICCV 2025 -->
           </h4>
           <div class="is-size-5 publication-authors">
@@ -98,8 +99,6 @@
           
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
-             
               <span class="link-block">
                 <a href="https://arxiv.org/abs/2603.09883"
                    class="external-link button is-normal is-rounded is-dark">
@@ -119,7 +118,6 @@
                   <span>Video</span>
                 </a>
               </span>
-     
             </div>
             
 
@@ -131,18 +129,135 @@
 </section>
 
 <section class="hero teaser">
+      <div class="container is-max-desktop">
+          <img src="./static/images/pipe_display.png"  width="800px" height="500px" 
+            type="application/pdf">
+          </img>
+          
+          <h2 class="subtitle has-text-centered">
+          </h2>
+
+      </div>
+    </section>
+
+
+
+<section class="section">
   <div class="container is-max-desktop">
-      <img src="./static/images/pipe_display.png"  width="800px" height="500px" 
-        type="application/pdf">
-      </img>
-      
-      <h2 class="subtitle has-text-centered">
-      </h2>
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          Human-centric video generation has advanced rapidly, yet existing methods struggle to produce controllable and physically consistent Human-Object Interaction (HOI) videos. Existing works rely on dense control signals, template videos, or carefully crafted text prompts, which limit flexibility and generalization to novel objects. We introduce a framework, namely DISPLAY, guided by Sparse Motion Guidance, composed only of wrist joint coordinates and a shape-agnostic object bounding box. This lightweight guidance alleviates the imbalance between human and object representations and enables intuitive user control. To enhance fidelity under such sparse conditions, we propose an Object-Stressed Attention mechanism that improves object robustness. To address the scarcity of high-quality HOI data, we further develop a Multi-Task Auxiliary Training strategy with a dedicated data curation pipeline, allowing the model to benefit from both reliable HOI samples and auxiliary tasks. Comprehensive experiments show that our method achieves high-fidelity, controllable HOI generation across diverse tasks. 
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
 
-  </div>
-</section>
 
-<section class="section"></section>
+    <!-- Re-rendering -->
+    <section class="section">
+      <div class="container">
+        <!-- 居中标题 -->
+        <h2 class="title is-3 has-text-centered">Generated Results</h2>
+
+                  <!-- 视频简介内容 -->
+          <div class="content has-text-justified">
+            <p style="color: #003366; font-weight: bold; font-size: 1.25rem;">
+              Creative Generation
+            </p>
+          </div>
+  
+          <div class="columns is-multiline is-variable is-2">
+            <!-- 视频 1 -->
+            <div class="column is-one has-text-centered">
+              <video controls muted preload playsinline width="80%" style="display: inline-block;">
+                <source src="https://modelscope.cn/datasets/mumuwei/DISPLAY_demo/resolve/master/intro.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>  
+
+        <!-- 视频简介内容 -->
+        <div class="content has-text-justified">
+          <p style="color: #003366; font-weight: bold; font-size: 1.25rem;">
+            Object Replacement Results
+          </p>
+        </div>
+        
+        <!-- 多个视频横向排列 -->
+        <div class="columns is-multiline is-variable is-2">
+          <!-- 视频 1 -->
+          <div class="column is-one-two">
+            <video controls muted preload playsinline width="100%">
+              <source src="https://modelscope.cn/datasets/mumuwei/DISPLAY_demo/resolve/master/replace1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <!-- 视频 2 -->
+          <div class="column is-one-two">
+            <video controls muted preload playsinline width="100%">
+              <source src="https://modelscope.cn/datasets/mumuwei/DISPLAY_demo/resolve/master/replace2.mp4" type="video/mp4">
+            </video>
+          </div>
+          </div>
+
+          <!-- 视频简介内容 Comparisons on the Streamer Dataset -->
+          <div class="content has-text-justified">
+            <p style="color: #003366; font-weight: bold; font-size: 1.25rem;">
+              Object Insertion Results
+            </p>
+          </div>
+
+          <!-- 多个视频横向排列，每行2个，共4个 -->
+          <div class="columns is-multiline is-variable is-2">
+            <!-- 视频 1 -->
+            <div class="column is-half">
+              <video controls muted preload playsinline width="100%">
+                <source src="https://modelscope.cn/datasets/mumuwei/DISPLAY_demo/resolve/master/insert1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <!-- 视频 2 -->
+            <div class="column is-half">
+              <video controls muted preload playsinline width="100%">
+                <source src="https://modelscope.cn/datasets/mumuwei/DISPLAY_demo/resolve/master/insert2.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        
+          <!-- 标题行 -->
+          <div class="columns is-variable is-2">
+            <div class="column is-half">
+              <p style="color: #003366; font-weight: bold; font-size: 1.25rem;">  
+                Environmental Interaction Results
+              </p>
+            </div>
+            <div class="column is-half">
+              <p style="color: #003366; font-weight: bold; font-size: 1.25rem;">
+                Long Video Manipulation
+              </p>
+            </div>
+          </div>
+
+          <!-- 视频行 -->
+          <div class="columns is-multiline is-variable is-2">
+            <div class="column is-half">
+              <video controls muted preload playsinline width="100%">
+                <source src="https://modelscope.cn/datasets/mumuwei/DISPLAY_demo/resolve/master/environmental.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column is-half">
+              <video controls muted preload playsinline width="100%">
+                <source src="https://modelscope.cn/datasets/mumuwei/DISPLAY_demo/resolve/master/long.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+            
+          
+
+        </div>
+      </div>
+    </section>
+  <!--/ Re-rendering -->
 
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
@@ -153,7 +268,9 @@
           <!-- <video width="800" height="600" controls>
             <source src="https://www.youtube.com/watch?v=jWvAglDGWxA&t=1s" type="video/mp4">
           </video> -->
-          <iframe width="800" height="480" src="https://www.youtube.com/embed/o2odci6nV7k?si=9s8qfjTJbSetoDpy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="800" height="480"
+           src="https://www.youtube.com/embed/o2odci6nV7k?si=9s8qfjTJbSetoDpy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
           <!-- </video> -->
         <!-- </div> -->
       </div>
@@ -162,6 +279,11 @@
   </div>
 </section>
 
+
+<!-- <video width="320" height="240" controls>
+  <source src="videos/movie.mp4" type="video/new_sup_final_crf20.mp4">
+  Your browser does not support the video tag.
+</video> -->
 
 
 <section class="section" id="BibTeX">
